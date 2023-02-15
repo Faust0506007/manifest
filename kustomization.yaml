@@ -1,0 +1,15 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- backend
+- frontend
+- base
+commonLabels:
+  app: todoapp
+images:
+- name: todoapp-backend
+  newName: us-east1-docker.pkg.dev/jrm-todo-app/todoapp-repository/todoapp-backend
+  newTag: v1.0.13
+- name: todoapp-frontend
+  newName: us-east1-docker.pkg.dev/jrm-todo-app/todoapp-repository/todoapp-frontend
+  newTag: v1.0.18
