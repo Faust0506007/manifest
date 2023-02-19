@@ -23,7 +23,5 @@ That's why I used `sed` command to replace values in Manifest Files as a workaro
 
 I've decided to use Helm Chart with ArgoCD.
 
-Check Repository: https://github.com/p-le/devops-helm-charts# JRM-Todo-app-manifests
-#� �m�a�n�i�f�e�s�t�
-�
-�
+
+
